@@ -60,6 +60,7 @@ export function getUserAppFileUrl(path: string, username: string, appOrigin: str
  */
 export function getFile(path: string, options?: {decrypt?: boolean, username?: string, app?: string,
   zoneFileLookupURL?: ?string}) {
+  console.log("GETFILE");
   const defaults = {
     decrypt: true,
     username: null,
